@@ -35,9 +35,10 @@ class Invoice(models.Model):
     author: nancysikati@gmail.com
     """ 
     INVOICE_TYPE = (
-        ('R', 'RECU'),
-        ('P', 'PROFORMA FACTURE'),
-        ('F', 'FACTURE')
+        ('R', 'RECEIPT'),
+        ('P', 'PROFORMA INVOICE'),
+        ('F', 'INVOICE')
+
     )
     
     customer = models.ForeignKey(Customer, on_delete=models.PROTECT)

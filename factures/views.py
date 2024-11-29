@@ -47,3 +47,18 @@ class AddCustomerView(View):
             messages.error(request, f"Sorry, our system is detecting the following issues: {e}")
 
         return render(request, self.template_name)  # Rendre à nouveau le template en cas d'enregistrement
+    
+class AddInvoiceView(View):
+    """add a new customer view"""
+
+    template_name = 'add_invoice.html'
+    customers = Customer.objects.select_related('save_by').all()  # Correction de 'Customers' en 'customers'
+    context = {
+        'customers': customers
+    }
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, self.context)  # Correction de 'self.template_name, self.context' en 'request, self.template_name, self.context'
+
+    def post(self, request, *args, **kwargs):
+        return render(request, self.template_name, self.context)
