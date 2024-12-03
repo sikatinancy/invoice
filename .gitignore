@@ -1,32 +1,32 @@
-# Ignorer l'environnement virtuel
+# # Ignorer l'environnement virtuel
 
 vert/
 
-# Ignorer la base de données SQLite
-db.sqlite3
+# # Ignorer la base de données SQLite
+# db.sqlite3
 
-# Ignorer les fichiers de migration
-#**/migrations/*.pyc
-#**/migrations/*.py
-#!**/migrations/__init__.py
+# # Ignorer les fichiers de migration
+# #**/migrations/*.pyc
+# #**/migrations/*.py
+# #!**/migrations/__init__.py
 
-# Ignorer les fichiers compilés Python
-#*.pyc
-#*.pyo
-#*.pyd
+# # Ignorer les fichiers compilés Python
+# #*.pyc
+# #*.pyo
+# #*.pyd
 __pycache__/
 
-# Ignorer les fichiers de log
-*.log
+# # Ignorer les fichiers de log
+# *.log
 
-# Ignorer les fichiers système
-.DS_Store
-Thumbs.db
+# # Ignorer les fichiers système
+# .DS_Store
+# Thumbs.db
 
-# Ignorer les fichiers statiques générés
-/staticfiles/
+# # Ignorer les fichiers statiques générés
+# /staticfiles/
 
-# Ignorer les fichiers liés à l'IDE
-.vscode/
-.idea/
-*.swp
+# # Ignorer les fichiers liés à l'IDE
+# .vscode/
+# .idea/
+# *.swp
