@@ -6,9 +6,9 @@ vert/
 db.sqlite3
 
 # Ignorer les fichiers de migration
-**/migrations/*.pyc
-**/migrations/*.py
-!**/migrations/__init__.py
+#**/migrations/*.pyc
+#**/migrations/*.py
+#!**/migrations/__init__.py
 
 # Ignorer les fichiers compilés Python
 *.pyc
